@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             when {
                 expression {
-                    GIT_BRANCH != master
+                    GIT_BRANCH != "master"
                 }
             }
             steps {
@@ -25,7 +25,7 @@ pipeline {
         stage('Deploy to production') {
             when {
                 expression {
-                    GIT_BRANCH == master
+                    GIT_BRANCH == "master"
                 }
             }
             steps {
