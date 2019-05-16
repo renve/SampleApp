@@ -1,3 +1,5 @@
+@Library("jenkins-pipeline@master") _ 
+
 pipeline {
     agent any
 
@@ -29,7 +31,7 @@ pipeline {
                 }
             }
             steps {
-                echo 'Deploying to production'
+                deploy.deployBackend()
             }
         }
     }
