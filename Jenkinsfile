@@ -31,7 +31,9 @@ pipeline {
                 }
             }
             steps {
-                deploy.deployBackend()
+                scripts {
+                    deploy.deployBackend()
+                }
             }
         }
     }
