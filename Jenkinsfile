@@ -32,7 +32,7 @@ pipeline {
             }
             steps {
                 script {
-                    build.buildImage()
+                    build.buildImage("sample-app:1.0.0")
                     deploy.deployBackend()
                 }
             }
