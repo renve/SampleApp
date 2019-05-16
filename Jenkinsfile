@@ -32,7 +32,7 @@ pipeline {
             }
             steps {
                 script {
-                    build.buildImage
+                    build.buildImage()
                     deploy.deployBackend()
                 }
             }
