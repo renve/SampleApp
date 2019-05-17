@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: sample-app -pod name
+      app: sample-app
     # Define pods
   template:
     metadata:
